@@ -4,8 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Validation</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <header><h1>Header</h1></header>
+
+    <main>
+      <form action="" novalidate>
+        <div class="container">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" class="info" />
+        </div>
+
+        <div class="container">
+          <label for="country">Country</label>
+          <!-- <input type="country" id="country" name="country" class="info" /> -->
+          <select name="country" id="country">
+            <option value="">Select a Country</option>
+            <option value="canada">Canada</option>
+          </select>
+        </div>
+
+        <div class="container">
+          <label for="zipCode">Zip Code</label>
+          <input type="zipCode" id="zipCode" name="zipCode" class="info" />
+        </div>
+
+        <div class="container">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="info"
+            minlength="5"
+          />
+        </div>
+
+        <div class="container">
+          <label for="pwConfirm">Confirm Password</label>
+          <input
+            type="password"
+            id="pwConfirm"
+            name="pwConfirm"
+            class="info"
+            minlength="5"
+          />
+        </div>
+
+        <div class="container"><input type="submit" class="submit" /></div>
+      </form>
+    </main>
     <script src="main.js"></script>
   </body>
 </html>

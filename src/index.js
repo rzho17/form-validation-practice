@@ -1,1 +1,3 @@
-console.log("asdf");
+import { emailValidity } from "./form-validity";
+
+// emailValidity;
